@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orl-Yu-FZh">
-                                <rect key="frame" x="20" y="118" width="353" height="100"/>
+                                <rect key="frame" x="20" y="118" width="353" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start your search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCU-Nd-4M6">
-                                        <rect key="frame" x="115" y="39" width="123" height="22"/>
+                                        <rect key="frame" x="115" y="19" width="123" height="22"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XK1-NZ-4Xc">
-                                        <rect key="frame" x="81" y="39" width="24" height="22.333333333333336"/>
+                                        <rect key="frame" x="81" y="19" width="24" height="22.333333333333336"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="24" id="Bdj-ln-PeE"/>
@@ -34,7 +34,7 @@
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRr-sU-Z6d">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -53,7 +53,7 @@
                                     <constraint firstItem="bCU-Nd-4M6" firstAttribute="leading" secondItem="XK1-NZ-4Xc" secondAttribute="trailing" constant="10" id="pvq-TW-A1J"/>
                                     <constraint firstItem="IRr-sU-Z6d" firstAttribute="leading" secondItem="orl-Yu-FZh" secondAttribute="leading" id="u91-Lh-CjX"/>
                                     <constraint firstItem="XK1-NZ-4Xc" firstAttribute="centerY" secondItem="bCU-Nd-4M6" secondAttribute="centerY" id="x0s-AD-rdD"/>
-                                    <constraint firstAttribute="height" constant="100" id="yZc-na-REW"/>
+                                    <constraint firstAttribute="height" constant="60" id="yZc-na-REW"/>
                                 </constraints>
                             </view>
                         </subviews>
