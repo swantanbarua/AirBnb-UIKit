@@ -19,6 +19,14 @@ class ExploreVC: UIViewController {
         super.viewDidLoad()
         
         searchContainerView.layer.cornerRadius = 20
+        
+        exploreTableView.register(
+            UINib(
+                nibName: "ExploreTableViewCell",
+                bundle: nil
+            ),
+            forCellReuseIdentifier: "ExploreTableViewCell"
+        )
     }
     
     // MARK: - IBACTIONS
