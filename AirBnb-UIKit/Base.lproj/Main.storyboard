@@ -56,16 +56,39 @@
                                     <constraint firstAttribute="height" constant="60" id="yZc-na-REW"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPA-wE-2dw">
+                                <rect key="frame" x="0.0" y="188" width="393" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jGL-4O-oIm"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Sdf-Er-IJU">
+                                <rect key="frame" x="0.0" y="288" width="393" height="496"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5mf-6j-UlE"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="puf-AQ-fyn"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xPA-wE-2dw" secondAttribute="trailing" id="4Rb-Y6-DqS"/>
+                            <constraint firstItem="Sdf-Er-IJU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SPC-hc-8GZ"/>
+                            <constraint firstItem="xPA-wE-2dw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z1h-Ux-x7Q"/>
+                            <constraint firstItem="xPA-wE-2dw" firstAttribute="top" secondItem="orl-Yu-FZh" secondAttribute="bottom" constant="10" id="cNd-Bw-PN0"/>
+                            <constraint firstItem="Sdf-Er-IJU" firstAttribute="top" secondItem="xPA-wE-2dw" secondAttribute="bottom" id="g2D-Ot-wTL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="orl-Yu-FZh" secondAttribute="trailing" constant="20" id="hNp-gd-6WE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sdf-Er-IJU" secondAttribute="trailing" id="hwQ-Io-IT2"/>
                             <constraint firstItem="orl-Yu-FZh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="joQ-yF-Rbv"/>
                             <constraint firstItem="orl-Yu-FZh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lEP-0M-bIy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sdf-Er-IJU" secondAttribute="bottom" id="sWi-E5-G6S"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="exploreTableView" destination="Sdf-Er-IJU" id="EA0-oC-jjW"/>
                         <outlet property="searchContainerView" destination="orl-Yu-FZh" id="nxN-1o-ZTS"/>
                         <outlet property="searchTextField" destination="IRr-sU-Z6d" id="7q7-Ck-pgr"/>
                     </connections>
@@ -79,6 +102,9 @@
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
