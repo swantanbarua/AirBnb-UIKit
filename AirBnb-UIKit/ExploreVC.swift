@@ -10,6 +10,7 @@ import UIKit
 class ExploreVC: UIViewController {
 
     // MARK: - IBOUTLETS
+    @IBOutlet weak var searchContainerView: UIView!
     
     // MARK: - LIFECYCLE METHODS
     override func viewDidLoad() {
