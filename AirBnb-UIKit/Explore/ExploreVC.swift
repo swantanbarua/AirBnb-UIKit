@@ -22,10 +22,10 @@ class ExploreVC: UIViewController {
         
         exploreTableView.register(
             UINib(
-                nibName: "ExploreTableViewCell",
+                nibName: TableViewIdentifiers.exploreTableViewCell.rawValue,
                 bundle: nil
             ),
-            forCellReuseIdentifier: "ExploreTableViewCell"
+            forCellReuseIdentifier: TableViewIdentifiers.exploreTableViewCell.rawValue
         )
     }
     
