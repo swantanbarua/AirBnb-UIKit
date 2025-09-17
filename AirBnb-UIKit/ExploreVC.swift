@@ -16,6 +16,8 @@ class ExploreVC: UIViewController {
     // MARK: - LIFECYCLE METHODS
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchTextField.layer.cornerRadius = 10
     }
     
     // MARK: - IBACTIONS
