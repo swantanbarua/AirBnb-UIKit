@@ -11,6 +11,7 @@ class ExploreVC: UIViewController {
 
     // MARK: - IBOUTLETS
     @IBOutlet weak var searchContainerView: UIView!
+    @IBOutlet weak var searchTextField: UITextField!
     
     // MARK: - LIFECYCLE METHODS
     override func viewDidLoad() {
