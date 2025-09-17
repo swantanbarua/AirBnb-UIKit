@@ -34,7 +34,7 @@
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRr-sU-Z6d">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
+                                        <rect key="frame" x="20" y="0.0" width="313" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -48,10 +48,10 @@
                                     <constraint firstItem="bCU-Nd-4M6" firstAttribute="centerY" secondItem="orl-Yu-FZh" secondAttribute="centerY" id="ASK-SS-QWA"/>
                                     <constraint firstItem="bCU-Nd-4M6" firstAttribute="centerX" secondItem="orl-Yu-FZh" secondAttribute="centerX" id="U8v-OM-CL9"/>
                                     <constraint firstItem="IRr-sU-Z6d" firstAttribute="top" secondItem="orl-Yu-FZh" secondAttribute="top" id="aab-UR-G7Y"/>
-                                    <constraint firstAttribute="trailing" secondItem="IRr-sU-Z6d" secondAttribute="trailing" id="cYS-Jk-j5d"/>
+                                    <constraint firstAttribute="trailing" secondItem="IRr-sU-Z6d" secondAttribute="trailing" constant="20" id="cYS-Jk-j5d"/>
                                     <constraint firstAttribute="bottom" secondItem="IRr-sU-Z6d" secondAttribute="bottom" id="jt4-AD-NBM"/>
                                     <constraint firstItem="bCU-Nd-4M6" firstAttribute="leading" secondItem="XK1-NZ-4Xc" secondAttribute="trailing" constant="10" id="pvq-TW-A1J"/>
-                                    <constraint firstItem="IRr-sU-Z6d" firstAttribute="leading" secondItem="orl-Yu-FZh" secondAttribute="leading" id="u91-Lh-CjX"/>
+                                    <constraint firstItem="IRr-sU-Z6d" firstAttribute="leading" secondItem="orl-Yu-FZh" secondAttribute="leading" constant="20" id="u91-Lh-CjX"/>
                                     <constraint firstItem="XK1-NZ-4Xc" firstAttribute="centerY" secondItem="bCU-Nd-4M6" secondAttribute="centerY" id="x0s-AD-rdD"/>
                                     <constraint firstAttribute="height" constant="60" id="yZc-na-REW"/>
                                 </constraints>
