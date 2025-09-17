@@ -17,7 +17,7 @@ class ExploreVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchTextField.layer.cornerRadius = 10
+        searchContainerView.layer.cornerRadius = 10
     }
     
     // MARK: - IBACTIONS
