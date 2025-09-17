@@ -33,12 +33,25 @@
                                             <constraint firstAttribute="height" constant="24" id="iq5-e2-MIv"/>
                                         </constraints>
                                     </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRr-sU-Z6d">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="vM2-cT-sC6"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="bCU-Nd-4M6" firstAttribute="centerY" secondItem="orl-Yu-FZh" secondAttribute="centerY" id="ASK-SS-QWA"/>
                                     <constraint firstItem="bCU-Nd-4M6" firstAttribute="centerX" secondItem="orl-Yu-FZh" secondAttribute="centerX" id="U8v-OM-CL9"/>
+                                    <constraint firstItem="IRr-sU-Z6d" firstAttribute="top" secondItem="orl-Yu-FZh" secondAttribute="top" id="aab-UR-G7Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="IRr-sU-Z6d" secondAttribute="trailing" id="cYS-Jk-j5d"/>
+                                    <constraint firstAttribute="bottom" secondItem="IRr-sU-Z6d" secondAttribute="bottom" id="jt4-AD-NBM"/>
                                     <constraint firstItem="bCU-Nd-4M6" firstAttribute="leading" secondItem="XK1-NZ-4Xc" secondAttribute="trailing" constant="10" id="pvq-TW-A1J"/>
+                                    <constraint firstItem="IRr-sU-Z6d" firstAttribute="leading" secondItem="orl-Yu-FZh" secondAttribute="leading" id="u91-Lh-CjX"/>
                                     <constraint firstItem="XK1-NZ-4Xc" firstAttribute="centerY" secondItem="bCU-Nd-4M6" secondAttribute="centerY" id="x0s-AD-rdD"/>
                                     <constraint firstAttribute="height" constant="100" id="yZc-na-REW"/>
                                 </constraints>
@@ -54,6 +67,7 @@
                     </view>
                     <connections>
                         <outlet property="searchContainerView" destination="orl-Yu-FZh" id="nxN-1o-ZTS"/>
+                        <outlet property="searchTextField" destination="IRr-sU-Z6d" id="7q7-Ck-pgr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
