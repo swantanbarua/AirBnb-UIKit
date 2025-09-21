@@ -26,7 +26,7 @@ extension ExploreVC: UITableViewDataSource {
     ) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(
-            withIdentifier: TableViewIdentifiers.exploreTableViewCell.rawValue,
+            withIdentifier: TableViewIdentifiers.exploreTableViewCell,
             for: indexPath
         ) as? ExploreTableViewCell else {
             return UITableViewCell()
