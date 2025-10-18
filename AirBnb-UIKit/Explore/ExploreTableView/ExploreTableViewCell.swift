@@ -10,6 +10,7 @@ import UIKit
 class ExploreTableViewCell: UITableViewCell {
 
     // MARK: - IBOUTLETS
+    @IBOutlet weak var exploreListCollectionView: UICollectionView!
     
     // MARK: - LIFECYCLE METHODS
     override func awakeFromNib() {
